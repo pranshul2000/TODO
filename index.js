@@ -2,9 +2,11 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
+app.use(express.static('./assets'));
+
 
 // setting up router
-app.use('/', require('./router/index'));
+app.use('/', require('./router'));
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
