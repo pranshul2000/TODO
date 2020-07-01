@@ -1,4 +1,149 @@
 body{
     margin: 0;
+    background-color: #808080;
+}
+.main-container{
+    position: absolute;
+    left: 25%;
+    top:  2%;
+    width: 50%;
+    height: 90%;
+    background-color: whitesmoke;
+}
+.line{
+    margin-bottom: 0;
+}
+
+/* name  */
+.app-name{
     text-align: center;
+    font-size: 2rem;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+
+/* form  */
+.form-style{
+    display: inline-block;
+    width: 100%;
+}
+.description-input-label{
+    padding-left: 15px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.description-input{
+    display: block;
+    width: 90%;
+    border: none;
+    margin-top: 8px;
+    margin-left: 12px;
+    background-color: whitesmoke;
+}
+.description-input::-webkit-input-placeholder { 
+    font-size: 1.1rem;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.catagory-container{
+    display: inline-block;
+    width: 49%;
+    margin-left: 12px;
+    border-right: .5px solid grey;
+}
+.category-input-label{
+    display: block;
+    font-size: 1.3rem;
+    /* margin-left: 12px; */
+    margin-bottom: 10px;
+}
+.category-input{
+    border: none;
+    width: 70%;
+    background-color: whitesmoke;
+}
+.category-input::-webkit-input-placeholder{
+    font-size: 1.1rem;
+}
+
+.date-conatiner{
+    display: inline-block;
+    width: 45%;
+}
+.data-container-label{
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.date-input{
+    border: none;
+    width: 70%;
+    background-color: whitesmoke;
+}
+.date-input::-webkit-input-placeholder{
+    font-size: 1.1rem;
+}
+
+/* buttons */
+.add-button{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    background-color: #444444;
+    border: none;
+    color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: .2rem;
+}
+.delete-button{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    background-color:#ee351e;
+    border: none;
+    color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: .2rem;
+}
+.dividing-line{
+    margin-top: 14%;
+    width: 94%;
+}
+
+.task-container{
+    width: 94%;
+    margin-left: 3%;
+    display: block;
+}
+.checkbox-style{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 15px;
+    /* outline: 1.2px solid grey; */
+    vertical-align: top;
+}
+.details{
+    display: inline-block;
+    /* position: absolute; */
+    left: 10%;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #75758a;
+}
+.category-box{
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    text-align: center;
+    width: 12%;
+    background-color: #ee351e;
+    color: whitesmoke;
+    border-radius: .25rem;
 }

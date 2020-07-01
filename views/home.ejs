@@ -3,7 +3,60 @@
         <%= title %>
     </title>
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <body>
-        Body of the page <%= title %>
+        <main>
+            <div class="main-container">
+                <p class="app-name">
+                    TODO App
+                    <hr class="line">
+                </p>
+                <form action="" method="POST">
+                    <label for="" class="description-input-label">Description</label>
+                    <input type="text" class="description-input" placeholder="What do you need to do" required>
+                    <hr>
+                    <div class="catagory-container">
+                        <label for="" class="category-input-label">Category</label>
+                        <input list="category" placeholder="Choose a category" class="category-input" required>
+                        <datalist id="category">
+                            <option value="Personal">Personal</option>
+                            <option value="Work"></option>
+                            <option value="School"></option>
+                            <option value="Cleaning"></option>
+                            <option value="Other"></option>
+                        </datalist>
+                    </div>
+                    <div class="date-conatiner">
+                        <label for="" class="data-container-label">Due Date</label>
+                        <input type="date" class="date-input" required>
+                    </div>
+                    <hr>
+                    <button type="submit" class="add-button">
+                        <i class="fas fa-plus"></i>
+                        Add Task
+                    </button>
+                </form>
+                <button class="delete-button">
+                    <i class="far fa-trash-alt"></i>
+                    Delete Task
+                </button>
+                <hr class="dividing-line">
+                <div class="task-container">
+                    <input type="checkbox" class="checkbox-style">
+                    <p class="details">
+                        Lets make a to do app
+                        <br>
+                        
+                        <i class="fas fa-calendar-alt"></i>
+                        date
+                    </p>
+                    <div class="category-box">
+                        <p>hey</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+        </main>
     </body>
 </html>
