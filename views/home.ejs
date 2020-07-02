@@ -11,13 +11,13 @@
                     TODO App
                     <hr class="line">
                 </p>
-                <form action="" method="POST">
-                    <label for="" class="description-input-label">Description</label>
-                    <input type="text" class="description-input" placeholder="What do you need to do" required>
+                <form action="/create-todo" method="POST">
+                    <label for="description" class="description-input-label">Description</label>
+                    <input type="text" name="description" class="description-input" placeholder="What do you need to do" required>
                     <hr>
                     <div class="catagory-container">
-                        <label for="" class="category-input-label">Category</label>
-                        <input list="category" placeholder="Choose a category" class="category-input" required>
+                        <label for="category" class="category-input-label">Category</label>
+                        <input list="category" name="category" placeholder="Choose a category" class="category-input" required>
                         <datalist id="category">
                             <option value="Personal">Personal</option>
                             <option value="Work"></option>
@@ -27,8 +27,8 @@
                         </datalist>
                     </div>
                     <div class="date-conatiner">
-                        <label for="" class="data-container-label">Due Date</label>
-                        <input type="date" class="date-input" required>
+                        <label for="date" class="data-container-label">Due Date</label>
+                        <input type="date" name="date" class="date-input" required>
                     </div>
                     <hr>
                     <button type="submit" class="add-button">
@@ -41,20 +41,26 @@
                     Delete Task
                 </button>
                 <hr class="dividing-line">
+
+                <% for(let i of todo_list) { %>
                 <div class="task-container">
                     <input type="checkbox" class="checkbox-style">
                     <p class="details">
-                        Lets make a to do app
+                        <%= i.description %>
                         <br>
                         
                         <i class="fas fa-calendar-alt"></i>
-                        date
+                        <span class="date-css"><%= i.date%></span>
                     </p>
                     <div class="category-box">
-                        <p>hey</p>
+                        <p>
+                            <%= i.category%>
+                        </p>
                     </div>
                     <hr>
                 </div>
+                <% } %>
+
             </div>
 
         </main>

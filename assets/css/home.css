@@ -87,6 +87,9 @@ input:focus, textarea:focus, select:focus{
     font-size: 1.1rem;
 }
 
+
+
+
 /* buttons */
 .add-button{
     position: absolute;
@@ -146,4 +149,8 @@ input:focus, textarea:focus, select:focus{
     background-color: #ee351e;
     color: whitesmoke;
     border-radius: .25rem;
+}
+.date-css{
+    font-size: 1.1rem;
+    
 }
