@@ -32,3 +32,16 @@ module.exports.newTodo = function(req, res){
         res.redirect('back');
     });
 }
+
+module.exports.delete = function(req,res){
+   console.log(req.body.checkbox);
+   Todo.deleteMany({_id: req.body.checkbox}, function(err){
+       if(err){
+           console.log("error in deleting entry from DB");
+           return
+       }
+       console.log('delete successfully');
+       return res.redirect('back');
+   })
+
+}

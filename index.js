@@ -8,14 +8,15 @@ const db = require('./config/mongoose');
 
 // middleware to access static files
 app.use(express.static('./assets'));
+// app.use(express.urlencoded());
 
-
-// setting up router
-app.use('/', require('./router'));
-
-// setting up view engine 
+// setting up view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
+// setting up router
+app.use('/', require('./router'));
+ 
+
 
 // checking for error in sever .. if not displaying msg of "server working fine"
 app.listen(port, function(err){

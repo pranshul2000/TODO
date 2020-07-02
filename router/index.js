@@ -8,8 +8,11 @@ const { urlencoded } = require('express');
 router.use(express.urlencoded());
 
 
-
+// kuch add ni hoga vo cmt kr dia toh  aare isko main index pe define kro
 
 router.get('/', homeController.home);
 router.post('/create-todo',homeController.newTodo);
+
+router.post('/delete-todo',homeController.delete);
 module.exports = router;
+

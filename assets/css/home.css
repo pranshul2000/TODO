@@ -9,6 +9,10 @@ body{
     width: 50%;
     height: 90%;
     background-color: whitesmoke;
+    overflow-y: scroll;
+}
+.main-container::-webkit-scrollbar {
+    display: none;
 }
 .line{
     margin-bottom: 0;
@@ -152,5 +156,7 @@ input:focus, textarea:focus, select:focus{
 }
 .date-css{
     font-size: 1.1rem;
-    
+}
+.break-line{
+    font-size: .5rem;
 }
